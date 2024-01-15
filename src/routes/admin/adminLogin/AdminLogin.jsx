@@ -12,6 +12,9 @@ function AdminLogin() {
       return toast.error("Yaroqsiz ma'lumot kiritildi", {
         position: "top-center",
         autoClose: 1500,
+        className: "black-background",
+        bodyClassName: "grow-font-size",
+        progressClassName: "fancy-progress-bar",
       });
     }
     localStorage.setItem("admin", phone);

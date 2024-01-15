@@ -12,6 +12,12 @@ a {
 button {
   cursor: pointer;
 }
+:root {
+  --toastify-toast-width: 420px;
+  --toastify-toast-min-height: 94px;
+  --toastify-toast-max-height: 800px;
+  --toastify-toast-font-size: 24px;
+}
 .admin__sidebar {
   width: 409px;
   height: 100vh;
