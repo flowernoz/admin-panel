@@ -2,6 +2,10 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 a {
   text-decoration: none;
 }
@@ -9,7 +13,7 @@ button {
   cursor: pointer;
 }
 .admin__sidebar {
-  width: 300px;
+  width: 409px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,33 +26,33 @@ button {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 15px;
-  padding: 40px;
+  padding: 40px 60px;
 }
 .sidebar__logo div {
-  width: 60px;
-  height: 60px;
+  width: 68px;
+  height: 68px;
   border-radius: 18px;
   background: #0085af;
 }
 .sidebar__logo a {
   color: #5d6661;
-  font-size: 35px;
+  font-size: 36.65px;
   font-weight: 400;
 }
 .admin__sidebar span {
   color: #bdbdbd;
   font-size: 20px;
   font-weight: 400;
-  padding-left: 40px;
+  padding-left: 52px;
 }
 .sidebar__links {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 35px;
-  padding: 0 30px;
+  gap: 40px;
+  padding: 0 50px;
 }
 .sidebar__links a {
   width: 235px;
@@ -61,7 +65,7 @@ button {
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   color: #0085af;
-  font-size: 20px;
+  font-size: 22.65px;
   font-weight: 500;
 }
 

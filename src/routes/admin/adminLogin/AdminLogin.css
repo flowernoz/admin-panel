@@ -11,8 +11,8 @@
   background-position: left;
 }
 .admin__login__form {
-  width: 500px;
-  height: 400px;
+  width: 790px;
+  height: 587px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,26 +28,26 @@
 }
 .admin__login__form p {
   color: #5d6661;
-  font-size: 40px;
+  font-size: 55.9px;
   font-weight: 400;
 }
 .admin__login__form input {
-  width: 80%;
-  height: 50px;
+  width: 574px;
+  height: 91px;
   border: 2px solid #3498db;
   border-radius: 18px;
   background: #fff;
   box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.25);
   text-indent: 20px;
   color: #5d6661;
-  font-size: 22px;
+  font-size: 36.65px;
   font-weight: 400;
   outline: none;
 }
 .admin__login__form span button,
 .admin__login__form span {
   color: #5d6661;
-  font-size: 16px;
+  font-size: 22.65px;
   font-weight: 400;
 }
 .admin__login__form span button {
@@ -62,6 +62,6 @@
   background: #3498db;
   border: none;
   color: #fff;
-  font-size: 22px;
+  font-size: 36.65px;
   font-weight: 400;
 }

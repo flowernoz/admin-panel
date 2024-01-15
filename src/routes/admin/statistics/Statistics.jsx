@@ -24,10 +24,15 @@ function Statistics({ title, dataNumber }) {
     plugins: {
       legend: {
         position: "top",
+        labels: {
+          font: {
+            size: 20,
+          },
+        },
       },
     },
   };
-
+  ChartJS.defaults.font.size = 16;
   const labels = [
     "January",
     "February",
@@ -39,17 +44,21 @@ function Statistics({ title, dataNumber }) {
   ];
   const data = {
     labels,
+
     datasets: [
       {
         label: title,
         data: dataNumber,
         backgroundColor: "#0085AF",
+        font: {
+          size: 20,
+        },
       },
     ],
   };
   return (
     <div className="statistics">
-      <p>{title}</p>
+      <p className="statisticsTitle">{title}</p>
       <Bar options={options} data={data} />
     </div>
   );

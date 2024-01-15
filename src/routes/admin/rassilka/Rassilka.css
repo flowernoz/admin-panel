@@ -1,4 +1,7 @@
 .rassilka {
-  width: calc(100% - 300px);
-  padding: 80px;
+  width: calc(100% - 409px);
+  padding: 96px 52px;
+}
+.rassilka p {
+  font-size: 22px;
 }
