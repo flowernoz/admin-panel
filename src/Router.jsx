@@ -7,12 +7,17 @@ import Announcement from "./routes/admin/announcements/Announcement";
 import Income from "./routes/admin/income/Income";
 import Rassilka from "./routes/admin/rassilka/Rassilka";
 import Users from "./routes/admin/users/Users";
-
+let admin = localStorage.getItem("admin");
 function Router() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Link to={"/adminlogin"}>Admin-panel</Link>} />
+        <Route
+          path="/"
+          element={
+            <Link to={admin ? "admin" : "/adminlogin"}>Admin-panel</Link>
+          }
+        />
         <Route path="/adminlogin" element={<AdminLogin />} />
         <Route path="/admin" element={<AdminController />}>
           <Route path="/admin" element={<Admin />}>
