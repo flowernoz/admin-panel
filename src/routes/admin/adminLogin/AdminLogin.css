@@ -1,0 +1,67 @@
+.admin__login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../../assets/admin/admin-login-bg.jpeg),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: left;
+}
+.admin__login__form {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px 0;
+  gap: 15px;
+  border: 2px solid #fff;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 29.5px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  z-index: 5;
+}
+.admin__login__form p {
+  color: #5d6661;
+  font-size: 40px;
+  font-weight: 400;
+}
+.admin__login__form input {
+  width: 80%;
+  height: 50px;
+  border: 2px solid #3498db;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.25);
+  text-indent: 20px;
+  color: #5d6661;
+  font-size: 22px;
+  font-weight: 400;
+  outline: none;
+}
+.admin__login__form span button,
+.admin__login__form span {
+  color: #5d6661;
+  font-size: 16px;
+  font-weight: 400;
+}
+.admin__login__form span button {
+  color: #3498db;
+  background: none;
+  border: none;
+}
+.admin__login__btn {
+  width: 240px;
+  padding: 11px 28px;
+  border-radius: 18px;
+  background: #3498db;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+}

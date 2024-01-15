@@ -1,0 +1,13 @@
+.admin {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.admin__logout {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
