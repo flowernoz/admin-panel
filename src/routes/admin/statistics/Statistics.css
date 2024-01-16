@@ -10,3 +10,12 @@
 .statisticsTitle {
   font-size: 22.65px;
 }
+
+/* === MEDIA === */
+
+@media screen and (max-width: 1910px) {
+  .statistics {
+    width: 97%;
+    height: auto;
+  }
+}

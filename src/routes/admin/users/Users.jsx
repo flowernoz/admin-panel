@@ -3,7 +3,7 @@ import "./Users.css";
 function Users() {
   let data = [40, 20, 37, 27, 58, 79, 60];
   return (
-    <div className="users">
+    <div className="users admin__pages">
       <Statistics title={"Foydalanuvchilar"} dataNumber={data} />
     </div>
   );

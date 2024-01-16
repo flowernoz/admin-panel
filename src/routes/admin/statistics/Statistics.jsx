@@ -51,7 +51,7 @@ function Statistics({ title, dataNumber }) {
         data: dataNumber,
         backgroundColor: "#0085AF",
         font: {
-          size: 20,
+          size: 18,
         },
       },
     ],
