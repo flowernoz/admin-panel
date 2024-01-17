@@ -5,7 +5,7 @@ function Sidebar() {
     <div className="admin__sidebar">
       <div className="sidebar__logo">
         <div></div>
-        <Link to={"/admin"}>Frosh</Link>
+        <Link to={"/"}>Frosh</Link>
       </div>
       <span>Menu</span>
       <div className="sidebar__links">

@@ -11,4 +11,23 @@
   width: 51px;
   height: 52px;
   cursor: pointer;
+  z-index: 900;
+}
+
+/* === MEDIA === */
+
+@media screen and (max-width: 1560px) {
+  .admin__logout {
+    width: 45px;
+    height: 45px;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .admin__logout {
+    width: 45px;
+    height: 45px;
+  }
 }

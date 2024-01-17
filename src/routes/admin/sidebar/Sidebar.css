@@ -60,7 +60,6 @@ button {
 .sidebar__links a {
   width: 235px;
   display: flex;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 14px 31px;
@@ -77,40 +76,17 @@ button {
   color: #fff;
 }
 
-/* === MEDIA GENERAL === */
+/* === MEDIA === */
 
 @media screen and (max-width: 1560px) {
   .admin__sidebar {
     width: 350px;
   }
-  .admin__pages {
-    width: calc(100% - 350px) !important;
-    padding: 70px 50px !important;
-  }
-  .admin__logout {
-    width: 45px;
-    height: 45px;
-    top: 20px;
-    right: 20px;
-  }
-  .rassilka p {
-    font-size: 18px !important;
-  }
 }
+
 @media screen and (max-width: 1400px) {
-  .admin__logout {
-    width: 45px;
-    height: 45px;
-  }
   .admin__sidebar {
     width: 300px;
-  }
-  .admin__pages {
-    width: calc(100% - 300px) !important;
-    padding: 80px 50px;
-  }
-  .statisticsTitle {
-    font-size: 20px;
   }
   .sidebar__logo div {
     width: 55px;
@@ -133,8 +109,110 @@ button {
   }
 }
 
-@media screen and (max-width: 1250px) {
-  .statisticsTitle {
-    font-size: 18px !important;
+@media screen and (max-width: 1190px) {
+  .admin__sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 80px;
+    /* background: #000; */
+    z-index: 100;
+    flex-direction: row;
+    align-items: center;
+  }
+  .sidebar__logo {
+    width: auto;
+    padding: 0 20px;
+  }
+  .sidebar__links {
+    width: 70%;
+    height: 100%;
+    gap: 40px;
+    padding: 15px 30px;
+    flex-direction: row;
+  }
+  .sidebar__links a {
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+  .admin__sidebar span {
+    display: none;
+  }
+  .statistics {
+    width: 100% !important;
+    height: auto;
+  }
+  .admin__logout {
+    position: fixed;
+    width: 33px;
+    height: 35px;
+    top: 25px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .sidebar__logo div {
+    width: 50px;
+    height: 50px;
+  }
+  .sidebar__logo a {
+    font-size: 30px;
+  }
+  .sidebar__links {
+    width: auto;
+    padding: 15px 60px 15px 15px;
+    justify-content: space-between;
+  }
+  .sidebar__links a {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .sidebar__logo {
+    gap: 8px;
+  }
+  .sidebar__logo div {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+  }
+  .sidebar__logo a {
+    font-size: 25px;
+  }
+  .sidebar__links {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 880px) {
+  .sidebar__links {
+    justify-content: start;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .sidebar__links {
+    justify-content: start;
+    gap: 20px;
+  }
+  .sidebar__links a {
+    padding: 7px 9px;
+    border: none;
+  }
+}
+@media screen and (max-width: 760px) {
+  .sidebar__links a {
+    box-shadow: none;
+    width: auto;
+    padding: 0;
+    color: #5d6661;
+  }
+  .sidebar__links a.active {
+    background: none;
+    color: #0085af;
   }
 }
