@@ -1,6 +1,7 @@
 .admin__pages {
   width: calc(100% - 409px);
   padding: 96px 52px;
+  overflow-x: auto;
 }
 
 /* ===MEDIA === */

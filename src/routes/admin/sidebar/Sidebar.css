@@ -91,6 +91,14 @@ button {
   .admin__sidebar {
     width: 350px;
   }
+  .sidebar__links {
+    width: 80%;
+    padding: 0 30px;
+  }
+  .sidebar__links a {
+    width: auto;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -108,12 +116,10 @@ button {
     padding-left: 35px;
   }
   .sidebar__links {
-    width: 100%;
     gap: 40px;
     padding: 0 30px;
   }
   .sidebar__links a {
-    width: 95%;
     font-size: 20px;
   }
 }
@@ -147,6 +153,13 @@ button {
     text-align: center;
     padding: 8px 20px;
     font-size: 18px;
+    border: none;
+    box-shadow: none;
+    color: #5d6661;
+  }
+  .sidebar__links a.active {
+    background: none;
+    color: #0085af;
   }
   .admin__sidebar span {
     display: none;
@@ -215,14 +228,8 @@ button {
 }
 @media screen and (max-width: 760px) {
   .sidebar__links a {
-    box-shadow: none;
     width: auto;
     padding: 0;
-    color: #5d6661;
-  }
-  .sidebar__links a.active {
-    background: none;
-    color: #0085af;
   }
 }
 @media screen and (max-width: 720px) {
