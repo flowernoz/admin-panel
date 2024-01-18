@@ -1,20 +1,42 @@
 .statistics {
   width: 100%;
-  height: 833px;
+  min-height: 833px;
   background: #fff;
   padding: 77px 54px;
   border-radius: 10px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   overflow-x: auto;
 }
 
 .statisticsTitle {
   font-size: 22.65px;
 }
-
+.stat__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.stat__details p {
+  font-size: 35px;
+  font-weight: 500;
+}
+.period__btns {
+  display: flex;
+  gap: 15px;
+}
+.period__btns button {
+  font-size: 22px;
+  padding: 8px 20px;
+  border: 1px solid rgba(93, 102, 97, 0.5);
+  border-radius: 11px;
+  color: #6b6b6b;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  background: #fdfdfd;
+}
 /* === MEDIA === */
 
 @media screen and (max-width: 1910px) {
@@ -31,11 +53,25 @@
   .statisticsTitle {
     font-size: 20px;
   }
+  .stat__details p {
+    font-size: 25px;
+  }
+  .period__btns button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
   .statisticsTitle {
     font-size: 18px !important;
+  }
+  .stat__details p {
+    font-size: 18px;
+  }
+  .period__btns button {
+    font-size: 14px;
+    padding: 6px 10px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -46,5 +82,22 @@
   }
   .statisticsTitle {
     font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .stat__details p {
+    font-size: 16px;
+  }
+  .period__btns button {
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 3px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .stat__details {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
   }
 }

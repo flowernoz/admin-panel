@@ -24,19 +24,9 @@ function Statistics({ title, dataNumber }) {
     plugins: {
       legend: {
         display: false,
-
-        // position: "top",
-        // labels: {
-        //   font: {
-        //     size: 20,
-        //   },
-        // },
       },
     },
   };
-  document.body.style.width <= "730px"
-    ? (ChartJS.defaults.font.size = 14)
-    : (ChartJS.defaults.font.size = 16);
 
   const labels = [
     "January",
@@ -61,9 +51,18 @@ function Statistics({ title, dataNumber }) {
       },
     ],
   };
+  const period = ["haftalik", "oylik", "yillik"];
   return (
     <div className="statistics">
       <p className="statisticsTitle">{title}</p>
+      <div className="stat__details">
+        <p>50000 UZS</p>
+        <div className="period__btns">
+          {period.map((i, inx) => (
+            <button>{i}</button>
+          ))}
+        </div>
+      </div>
       <Bar options={options} data={data} />
     </div>
   );
