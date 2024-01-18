@@ -5,6 +5,9 @@
   padding: 77px 54px;
   border-radius: 10px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .statisticsTitle {

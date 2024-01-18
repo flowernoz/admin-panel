@@ -23,12 +23,14 @@ function Statistics({ title, dataNumber }) {
     responsive: true,
     plugins: {
       legend: {
-        position: "top",
-        labels: {
-          font: {
-            size: 20,
-          },
-        },
+        display: false,
+
+        // position: "top",
+        // labels: {
+        //   font: {
+        //     size: 20,
+        //   },
+        // },
       },
     },
   };
