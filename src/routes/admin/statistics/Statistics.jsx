@@ -32,7 +32,10 @@ function Statistics({ title, dataNumber }) {
       },
     },
   };
-  ChartJS.defaults.font.size = 16;
+  document.body.style.width <= "730px"
+    ? (ChartJS.defaults.font.size = 14)
+    : (ChartJS.defaults.font.size = 16);
+
   const labels = [
     "January",
     "February",
@@ -51,7 +54,7 @@ function Statistics({ title, dataNumber }) {
         data: dataNumber,
         backgroundColor: "#0085AF",
         font: {
-          size: 18,
+          size: 16,
         },
       },
     ],

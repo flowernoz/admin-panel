@@ -26,3 +26,10 @@
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 720px) {
+  .admin__pages {
+    width: 100% !important;
+    padding: 110px 25px !important;
+    margin: 0 auto;
+  }
+}

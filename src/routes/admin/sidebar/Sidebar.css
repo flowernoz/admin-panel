@@ -75,7 +75,16 @@ button {
   background: #0085af;
   color: #fff;
 }
-
+.navbar__btns {
+  display: none;
+}
+.modalBar__btn {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 30px;
+  color: #5d6661;
+}
 /* === MEDIA === */
 
 @media screen and (max-width: 1560px) {
@@ -214,5 +223,27 @@ button {
   .sidebar__links a.active {
     background: none;
     color: #0085af;
+  }
+}
+@media screen and (max-width: 720px) {
+  .admin__sidebar {
+    justify-content: space-between;
+  }
+  .sidebar__links {
+    display: none;
+  }
+  .navbar__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 20px;
+  }
+  .navbar__btns img {
+    width: 30px;
+    height: 30px;
+  }
+  .admin__logout {
+    display: none;
   }
 }
